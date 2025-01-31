@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VL20QYFQL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-6VL20QYFQL');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shorten your long URLs easily with calyra.karelbara.cz. Enter a long URL and get a short URL that redirects seamlessly.">
+    <meta name="keywords" content="URL shortener, short URL, long URL, URL redirection, calyra.karelbara.cz">
+    <meta name="robots" content="index, follow">
+    <title>URL Shortener - calyra.karelbara.cz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shorten a long URL</h1>
+        </header>
+        <main>
+            <section>
+                <form id="urlForm">
+                    <div class="form-group">
+                        <label for="longUrl">Enter long link here:</label>
+                        <input type="url" id="longUrl" name="longUrl" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="alias">Customize your link (optional):</label>
+                        <div class="alias-group">
+                            <span>https://calyra.karelbara.cz/</span>
+                            <input type="text" id="alias" name="alias" placeholder="Enter alias">
+                        </div>
+                    </div>
+                    <button type="submit">Shorten URL</button>
+                </form>
+                <p id="shortUrl" class="hidden" onclick="copyToClipboard()">Click to copy the link</p>
+                <p id="copyConfirmation" class="hidden">Short URL copied to clipboard!</p>
+                <p class="agreement">By clicking Shorten URL, I agree to the <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a>, and <a href="#">Use of Cookies</a>.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 calyra.karelbara.cz. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
