@@ -1,3 +1,5 @@
+Script will shorten long urls to short url.
+
 1, create database
 2, copy files to folders
 3, done
