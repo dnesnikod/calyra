@@ -5,7 +5,9 @@
 
 
 CREATE DATABASE url_shortener_db;
+
 USE name_of_your_db;
+
 CREATE TABLE url_store (
     id INT AUTO_INCREMENT PRIMARY KEY,
     short_url_key VARCHAR(20) NOT NULL UNIQUE,
